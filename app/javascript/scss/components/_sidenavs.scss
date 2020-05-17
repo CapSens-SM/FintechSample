@@ -1,0 +1,14 @@
+.sidenav {
+  .nav-link {
+    @extend %block-shadow;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    &:hover {
+      @extend %accent-block-shadow;
+    }
+
+    &.active {
+      @extend %accent-block-shadow;
+    }
+  }
+}

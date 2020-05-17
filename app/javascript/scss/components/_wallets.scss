@@ -1,0 +1,18 @@
+.wallet {
+  display: flex;
+  width: 100%;
+  height: 200px;
+
+  .data {
+    margin: auto;
+    
+    .legend {
+      font-size: 0.5rem;
+      display: block;
+    }
+    .amount {
+      font-size: 2rem;
+      display: block;
+    }
+  }
+}

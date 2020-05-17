@@ -1,0 +1,17 @@
+// Variables
+@import "variables/fonts";
+@import "variables/colors";
+
+// Mixins
+@import "mixins/breakpoints";
+
+// Placeholders
+@import "placeholders/shadows";
+
+// Components
+@import "components/sidenavs";
+@import "components/wallets";
+@import "components/forms/inputs";
+
+// Libs
+@import "~bootstrap/scss/bootstrap.scss";

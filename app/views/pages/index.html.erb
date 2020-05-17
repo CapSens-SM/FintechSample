@@ -1,0 +1,39 @@
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="my-3 text-center">Abonder mon compte SmartFintek</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+      <ul class="nav nav-tabs nav-fill mt-5" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="iban-tab" data-toggle="tab" href="#iban" role="tab" aria-controls="iban" aria-selected="true">
+            <h2 class="h3">Coordonnées bancaires</h3>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="qrcode-tab" data-toggle="tab" href="#qrcode" role="tab" aria-controls="qrcode" aria-selected="false">
+            <h2 class="h3">QR Code</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content mt-5" id="myTabContent">
+        <div class="tab-pane fade show active text-center" id="iban" role="tabpanel" aria-labelledby="iban-tab">
+          <form class="mt-4">
+            <h2 class="h3">Coordonnées bancaires</h3>
+            <div class="form-group my-4">
+              <input class="form-control large-read-input" type="text" value="FR76 3000 1007 9412 3456 7890 185" readonly>
+            </div>
+            <div class="form-group my-4">
+              <input class="form-control large-read-input" type="text" value="CEPAFRPP" readonly>
+            </div>
+          </form>
+        </div>
+
+        <div class="tab-pane fade text-center" id="qrcode" role="tabpanel" aria-labelledby="qrcode-tab">
+          <h2 class="h3">QR Code</h3>>
+          <%= image_pack_tag 'qr-code.svg', class: 'img-fluid mx-auto', width: 300 %>
+        </div>
+      </div>
+
+    </div>
+</section>
