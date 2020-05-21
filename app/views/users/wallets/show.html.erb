@@ -1,0 +1,30 @@
+<section class="container py-5 px-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="my-3">Credit my <span class="text-primary">SmartFintek</span>'s wallet</h1>
+      <p class="">In order to credit your wallet, you just have to make a payin bankwire to these coordinates.</p>
+      
+      <div class="banking-coordinates my-5">
+        <h2 class="h3  mb-3">Banking coordinates</h3>
+        <div class="form-group row pl-sm-3">
+          <input id="ibanField" class="form-control large-read-input col-md-9"  type="text" value="<%= @wallet.iban %>" readonly>
+          <button type="submit"
+                  onclick="copyToClipboard('ibanField')"
+                  class="btn btn-secondary copy-input my-1 col-md-2 offset-md-1">Copy</button>
+        </div>
+
+        <div class="form-group row pl-sm-3">
+          <input id="bicField" class="form-control large-read-input col-md-9"  type="text" value="<%= @wallet.bic %>" readonly>
+          <button type="submit" 
+                  onclick="copyToClipboard('bicField')"
+                  class="btn btn-secondary my-1 col-md-2 offset-md-1">Copy</button>
+        </div>
+        
+      </div>
+
+      <% if current_user %>
+        <%= render partial: 'users/wallets/show/send_to_mobile_utilities' %>
+      <% end %>
+
+    </div>
+</section>
